@@ -1,10 +1,11 @@
 <script lang="ts">
 	import Alcohol from './components/Alcohol.svelte';
 
-	let drinks: Array<{
-		img: string,
-		key: string,
-	}> = [];
+	let drinks: Array<{ key: string, img?: string }> = [
+		{
+			key: "beer"
+		}
+	];
 
 	for (const key in localStorage){
 		const item = localStorage.getItem(key);
@@ -17,12 +18,11 @@
 		}
 	}
 
-	const addAlcohol = () => {
-		drinks = drinks.concat({
-			img: 'https://www.thecocktaildb.com/images/media/drink/vqwpsp1472668169.jpg',
-			key: 'beer'
-		})
-	}
+	// const addAlcohol = () => {
+	// 	drinks = drinks.concat({
+	// 		key: 'beer'
+	// 	})
+	// }
 </script>
 
 <main class="container mx-auto">
