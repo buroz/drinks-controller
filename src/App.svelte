@@ -1,11 +1,11 @@
 <script lang="ts">
 	import Alcohol from './components/Alcohol.svelte';
 
-	let drinks: Array<{ key: string, img?: string }> = [
-		{
-			key: "BEER"
-		}
-	];
+	if (!window.localStorage.getItem("BEER")) {
+		window.localStorage.setItem("BEER", "0");
+	}
+
+	let drinks: Array<{ key: string, img?: string }> = [];
 
 	for (const key in localStorage){
 		const item = localStorage.getItem(key);

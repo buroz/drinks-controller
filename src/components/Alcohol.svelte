@@ -35,10 +35,10 @@
 </script>
 
 <div class="relative">
-  <button on:click={deleteKey} class="absolute right-0 bg-red-600 text-white border-none text-lg p-1">x</button>
+  <!-- <button on:click={deleteKey} class="absolute right-0 bg-red-600 text-white border-none text-lg p-1">x</button> -->
 
   <div class="flex flex-col justify-center items-center my-2 space-y-2">
-    <!-- <img class="h-16" src="assets/{img}" alt="Beer" /> -->
+    <img class="h-16" src="assets/{img}" alt="Beer" />
     <span class="text-2xl text-blue-600 font-bold">{key}</span>
   </div>
   
