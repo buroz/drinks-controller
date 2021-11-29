@@ -3,7 +3,7 @@
 
 	let drinks: Array<{ key: string, img?: string }> = [
 		{
-			key: "beer"
+			key: "BEER"
 		}
 	];
 

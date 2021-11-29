@@ -35,11 +35,10 @@
 </script>
 
 <div class="relative">
-  <button on:click={deleteKey} class="absolute right-0 bg-red-600 text-white border-none text-lg py-1">x</button>
+  <button on:click={deleteKey} class="absolute right-0 bg-red-600 text-white border-none text-lg p-1">x</button>
 
   <div class="flex flex-col justify-center items-center my-2 space-y-2">
-    <!-- svelte-ignore a11y-img-redundant-alt -->
-    <img class="h-16" src="assets/{img}" alt="Beer" />
+    <!-- <img class="h-16" src="assets/{img}" alt="Beer" /> -->
     <span class="text-2xl text-blue-600 font-bold">{key}</span>
   </div>
   
@@ -53,5 +52,7 @@
     <div class="w-1/4">
       <Button on:click={increase} text="+" border="right" />
     </div>
-  </div>  
+  </div>
+
+  <hr />
 </div>
